@@ -1,0 +1,290 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+}
+body{
+    background-color: black;
+}
+
+header{
+    position: absolute;
+    background-image:linear-gradient(to top, transparent , rgba(0, 0, 0, 0.629)) ;
+    width: 100%;
+    height: 140px;
+}
+header >img{
+    width: 120px;
+    float: left;
+    padding-left:60px ;
+    padding-top:35px ;
+}
+header > #idi{
+    display: inline;
+    float: right;
+    padding-right: 40px;
+    padding-top: 40px;
+    color: white;
+    font-family:sans-serif;
+}
+#langu {
+    display: inline;
+    width: 85px;
+    height: 40px;
+    float: left;
+    
+    margin-right: 25px;
+    padding-bottom: 10px;
+    background-color:rgba(0, 0, 0, 0.184);
+    color: rgba(255, 255, 255, 0);
+   
+    border-radius: 5px;
+    border: 1px solid rgb(95, 95, 95) ;
+    text-align: center;
+
+}
+#langu:hover{
+    border: 1px solid white ; 
+}
+#idi i{
+color: white;
+font-size: 20px;
+}
+#idi >  #langu >select{ 
+    width: 85px;
+    color: white;
+    background: transparent;
+    border: none;
+    text-align: center;
+    appearance: none;
+    cursor: pointer;
+}
+
+#idi > #a{
+    display: inline;
+    float: right;
+    width: 80px;
+    height: 40px;
+    background-color:#A66BBF;
+    vertical-align: top;
+    border-radius: 5px;
+    text-align: center;
+}
+#idi > #a:hover{
+    background-color:#7c4e90;
+    transition: .5s;
+}
+
+#a > a{
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+#inicio {
+    width: 100%;
+    height: 660px;
+    padding: auto;
+    background: url(img/banner.jpeg) center center no-repeat ;
+    background-size: cover;
+    vertical-align: middle;
+}
+#inicio > .enter{
+    display: inline-block;
+    width: 100%;
+    margin-top: 250px;
+    text-align: center;
+    color: #ffffff;
+}
+.enter > h1 {
+    font-size: 40px;
+}
+.enter > p {
+    font-size: 20px;
+    margin-top: 16px;
+}
+.enter > input#email{
+    width: min(550px,65%);
+    height: 50px;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.617);
+    border: 1px solid #d5d5d5;
+    border-radius: 5px;
+
+    font-size: 18px;
+    color: white;
+    padding-left: 20px;
+}
+input#email::placeholder{
+    color :#a3a3a3;
+}
+#vamos {
+    cursor: pointer;
+    width: 150px; 
+    padding: 10px 10px 10px 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+
+    background-color: #46175F;
+    border: none;
+    color: white;
+    font-size: 20px;
+
+    
+}
+#vamos:hover{
+    background-color: #36124a;
+}
+#vamos > i{
+    vertical-align: middle;
+    font-size: 30px;
+}
+
+section#banner{
+    width: 79%;
+    height: 145px;
+    margin: auto;
+    margin-bottom: 50px;
+
+    color: white;
+    background-image: linear-gradient(to right , #000413 1% ,#151B4E 15% ,#8B102C 29%,#151B4E 80%,#000413 99%);
+}
+#banner-cont > img {
+    float: left;
+    margin: 32px 0px 0px 15px;
+   
+}
+#banner-cont{
+    margin: auto;
+    width: 520px;
+}
+#text-banner {
+    float: right;
+    padding: 25px 80px 0px 0px;
+    
+}
+#text-banner > h3{
+    font-size: 20px;
+    text-align: left;
+}
+#text-banner > p {
+    font-size: 16px;
+
+    text-align: left;
+
+}
+#text-banner > button{
+    margin-top: 5px;
+    background-color: transparent;
+    border: none;
+    color:#448ef4;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 18px;
+}
+#text-banner > button:hover{
+    color:rgb(42, 105, 192) ;
+    cursor: pointer;
+    transition: .5s;
+}
+.model{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom:120px ;
+    margin-bottom: 10px;
+    border-bottom:10px solid rgb(38, 38, 38);
+    background-color: black;
+    color: white;
+}
+.model > p{
+    padding: 10px 40px 0px 40px;
+
+}
+#perguntas > h2{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    color: white;
+}
+.info{
+    display: block;
+    width: 82%;
+    
+    margin:auto;
+    margin-bottom:10px;
+    padding-left: 2.5%;
+    padding-top:25px;
+    padding-bottom: 25px;
+
+    background-color:rgb(50, 50, 50);
+    border: none;
+    text-align: left;
+    font-size: 22px;
+    color: white;
+
+}
+.info:hover{
+    background-color:rgb(83, 83, 83);
+    cursor: pointer;
+}
+.info > i {
+    float: right;
+    padding: 0;
+    margin-right: 30px;
+    font-size: 30px;
+    
+}
+#enterfim{
+    margin-top: 50px;
+    margin-bottom: 60px;
+    color: white;
+    text-align: center;
+    font-size:22px;
+}
+#enterfim > input{
+    width: 65%;
+    height: 50px;
+    margin-top: 20px;
+    background-color: rgb(23, 23, 23);
+    border: 1px solid #d5d5d5;
+    border-radius: 5px;
+
+    font-size: 18px;
+    color: white;
+    padding-left: 20px;
+}
+#enterfim > input::placeholder{
+    color: white;
+}
+footer{
+    border-top: 10px solid rgb(38, 38, 38) ;
+    padding-bottom: 50px;
+    color: white;
+}
+footer > h2{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    font-size: 20px;
+    color: rgb(198, 198, 198);
+}
+footer > h2 > a{
+    color: rgb(198, 198, 198);  
+}
+footer > ul{
+    columns: 2;
+    list-style: none;
+    
+}
+footer > ul > li{
+padding-top: 10px;
+padding-left: 30px;
+}
+footer > ul > li >a{
+    padding-top: 10px;
+    color: rgb(198, 198, 198);
+}
