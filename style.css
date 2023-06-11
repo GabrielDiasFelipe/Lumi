@@ -206,14 +206,11 @@ section#banner{
     padding: 10px 40px 0px 40px;
 
 }
-div#tv > video{
-    display: none;
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    
+.model video{
+    width: min(84vw,600px);
 }
+    
+
 #perguntas > h2{
     padding-top: 30px;
     padding-bottom: 30px;
@@ -328,6 +325,9 @@ footer > ul > li >a{
         margin-right: 10px;
     }
     div.enter > p,div.enter > h1 {
+        padding: 0px 10px ;
+    }
+    div.enter > p,div.enter >p{
         padding: 0px 10px ;
     }
 } 
