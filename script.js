@@ -1,4 +1,5 @@
 function load() {
-    let x = document.getElementById('video1')
+    let x = document.getElementsByClassName("video")[0,1]
     x.play()
-}    
+}   
+ 
