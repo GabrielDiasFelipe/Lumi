@@ -8,14 +8,15 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
     <header>
-        <img src="img/logo.png" alt="Lumi" width="200px" >
+        <a href="#"  class="segredos" onclick="descobrir('logo')" ><img src="img/logo.png" alt="Lumi" width="200px" ></a>
         <section id="idi">
-            <div id="langu">
+            <div id="langu"  class="segredos" onclick="descobrir('idi')" >
                 <i class="material-symbols-outlined">
                     language
                 </i>
@@ -38,7 +39,7 @@
                 <p>Quer receber? Informe seu email para criar ou reiniciar sua assinatura.</p>
                 <input type="email" name="email" id="email" placeholder="Email" required maxlength="39">
                 <br>
-                <button id="vamos">
+                <button id="vamos" class="segredos" onclick="descobrir('vamos')">
                     Vamos lá <i class="material-symbols-outlined">
                     chevron_right
                     </i>
@@ -50,12 +51,12 @@
           
             <section id="banner">
                 <div id="banner-cont">
-                    <img src="img/pipoca.png" alt="Pipoca" width="80px">
+                    <img src="img/pipoca.png" class="segredos" onclick="descobrir('pipo')" alt="Pipoca" width="80px">
                     <div id="text-banner">
                         <h3>A Lumi que você adora por apenas <br> <abbr title="B$ = Beijinhos">B$18,90.</abbr>
                         </h3>
                         <p>Assine o plano Basico com distance.</p>
-                        <button>
+                        <button  class="segredos" onclick="descobrir('saiba')">
                             Saiba mais
                             <i class="material-symbols-outlined">chevron_right</i>
                         </button>
@@ -68,7 +69,7 @@
                     <h2>Aproveite Na Sua Casa</h2>
                     <p>Passe tempo Assistindo Filmes, Jogando, Ficando Na Arvore, Encontros e entre outros lazeres</p>
                     <div id="tv">
-                        <video id="video" autoplay loop controls>
+                        <video id="video" autoplay loop controls  class="segredos" onclick="descobrir('nos')">
                             <source src="img/nos(1) (online-video-cutter.com).mp4" type="video/mp4">
                         </video>
                     </div>
@@ -76,44 +77,91 @@
                 <div class="model">
                     <h2>Beije onde quiser</h2>
                     <p> beije quantos beijos e selinhos quiser na sua casa, na minha casa, na rua e no banheiro.</p>
-                    <video class="video" autoplay loop controls>
+                    <video class="video" autoplay loop controls  class="segredos" onclick="descobrir('familia')">
                         <source src="img/tv02 (online-video-cutter.com) (1).mp4" type="video/mp4">
                     </video>
                     
                 </div>
                 <div id="perguntas">
-                    <h2>Perguntas Frequentes</h2>
+                    <h2 class="segredos" onclick="descobrir('perguntas')" >Perguntas Frequentes</h2>
                  <ul>
-                    <li><button class="info">Oque é a Lumu?
+                    <li><button  onclick="Abrir0()" class="info">Oque é a Lumu?
                         <i class="material-symbols-outlined">
                             expand_more
                         </i>
                     </button></li>
-                    <li><button class="info">Quanto custa a Lumu?
+                    <div  class="resposta" id="res0" >
+                        <p> 
+                            Lumi e um Serviço de Memorias/Lembranças que busca fazer você Luana Craveiro Lima se recordar de todos nossos momentos juntos. </p>
+                            <p>
+                            O Nome Lumi tem Como Significado "Amada" Que é como eu quero que você sempre se sinta, alem do que Lu de luana ne obviamente e mi de... sla eu não vou levar todos creditos pedi pro chat gpt me dar um nome que seria bom kkkkk. hihi
+                            <br>
+                            <br>
+                            Neste Site Existem alguns segredinhos...hihi. cuidado aonde você Clique...
+                        </p>
+                        
+                    </div>
+
+                    <li><button onclick="Abrir1()" class="info">Quanto custa a Lumu?
                         <i class="material-symbols-outlined">
                             expand_more
                         </i>
                     </button></li>
-                    <li><button class="info">Onde posso Beijar?
+                    <div class="resposta" id="res1">
+                        <p>
+                            Rapaz... custa muito não so uns beijinhos e tudo mais e claro que assim como a concorrente *tosse*Netflix*Tosse* Não e permitida o Compartinhamento de contas porque sou monogamigo tlg, tmj.
+                        </p>
+                        
+                    </div>
+
+                    <li><button onclick="Abrir2()"  class="info">Onde posso Beijar?
                         <i class="material-symbols-outlined">
                             expand_more
                         </i>
                     </button></li>
-                    <li><button class="info">Como faço para cancelar
+                    <div class="resposta" id="res2">
+                        <p>
+                            Deixe de ser indecente garoto, quando eu digo aonde estou dizendo os lugares veja bem:
+                            Na nossa Arvore, Na Rua, Na minha ou Na sua Casa, No Cinema, Na Lanchonete e tudo mais, entendeu?
+                            <br>
+                            Acho Bom Que Sim.
+
+                        </p>
+                        
+                    </div>
+
+                    <li><button onclick="Abrir3(),play()"  class="info">Como faço para cancelar
                         <i class="material-symbols-outlined">
                             expand_more
                         </i>
                     </button></li>
-                    <li><button class="info">Oque eu posso receber com a Lumu
+                    <div class="resposta" id="res3">
+                        <video src="img/pararamram.mp4" type="video/mp4" id="mp4" loop >
+                    </div>
+
+                    <li><button onclick="Abrir4()"class="info">Oque eu posso receber com a Lumu
                         <i class="material-symbols-outlined">
                             expand_more
                         </i>
                     </button></li>
-                    <li><button class="info">a Lumu é adequada para cabeçonas?
+                    <div class="resposta" id="res4">
+                        <p>
+                            Cabeçudinha do meu coração você recebe beijos, abraços, cafune, presentinhos vire e mexe, desenhoszinhos, sites(esse eo o ultimo por um tempo acho que ta ficando meio repetitivo fazer site de presente pra oc).  
+                        </p>
+                    </div>
+                    
+                    <li><button onclick="Abrir5()"  class="info">a Lumu é adequada para cabeçonas?
                         <i class="material-symbols-outlined">
                             expand_more
                         </i>
                     </button></li>
+                    
+                    <div class="resposta" id="res5">
+                        <p>
+                            Não para todas, Apenas para a cabeçona suprema Luana Craveiro Lima,a garota mais linda e perfeita que eu ja conheci e que me faz muito feliz, te amo.
+                        </p>
+                    </div>
+
                  </ul>
                 </div>
                 <div id="enterfim" >
